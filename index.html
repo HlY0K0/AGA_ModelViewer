@@ -57,15 +57,21 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Build.loader.js"+"?v=202507032048";
+      var loaderUrl = buildUrl + "/Build.loader.js"+"?v=202507051807";
       var config = {
-        dataUrl: buildUrl + "/Build.data.unityweb"+"?v=202507032048",
-        frameworkUrl: buildUrl + "/Build.framework.js.unityweb"+"?v=202507032048",
-        codeUrl: buildUrl + "/Build.wasm.unityweb"+"?v=202507032048",
+        dataUrl: buildUrl + "/Build.data.unityweb"+"?v=202507051807",
+        frameworkUrl: buildUrl + "/Build.framework.js.unityweb"+"?v=202507051807",
+        codeUrl: buildUrl + "/Build.wasm.unityweb"+"?v=202507051807",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "AGA_ModelViewer",
         productVersion: "0.1.0",
+		
+		//キャプチャ機能用の追記部分
+		webglContextAttributes: {
+		  preserveDrawingBuffer: true
+		},
+		
         showBanner: unityShowBanner,
       };
 
